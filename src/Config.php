@@ -48,7 +48,9 @@ class Config
     * @example ['body_class','MPP::function',10,2]
     * @example ['body_class',['MPP','function'],10,2]
     */
-    public $add_action=[];
+    public $add_action=[
+        ['publish_post',['MPP\MailController','wpdocs_email_friends'],10,1]
+    ];
     /**
     * add custom shortcodes
     * @input array
